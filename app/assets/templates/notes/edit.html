@@ -15,5 +15,5 @@
 		<textarea class="form-control" id="content" name="content" ng-model="note.content"> </textarea>
 	</fieldset>
 	
-	<input type="submit" value="Submit" class="btn btn-default" ng-click="saveNote(note)" ng-disabled="isSubmitting">
+	<input type="submit" value="{{isSubmitting ? 'saving...' : 'Save'}}" class="btn btn-default" ng-click="saveNote(note)" ng-disabled="isSubmitting">
 </form>
